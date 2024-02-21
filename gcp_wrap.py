@@ -5,14 +5,8 @@ def try_gemi(prompt):
     gemini_pro_model = GenerativeModel("gemini-pro")
 
     system_prompt = f"""
-        You are overachieving tester.
-        Take it slow.
-        Use Gherkin declarative style. Use Given, When, Then.
-        Generate all Test scenarios based on user story and acceptance criteria.
-        Including happy path scenarios, negative scenarios and edge cases.
-        Write at least the amount of test as number of acceptence criteria given.
-        Format as a simple html snippet. Use template {HTML_TEMPLATE}
-        User story:
+        You know everything about BJSS Enterprise Agile.
+        Keep it really short. You will be given questions, just give quick short answer, no headings. Two sentences max
     """
     print(system_prompt)
     model_response = gemini_pro_model.generate_content(system_prompt + prompt, generation_config={"temperature": 0})

@@ -6,3 +6,4 @@ pandas~=2.2.0
 langchain~=0.1.7
 deepeval~=0.20.65
 langchain_google_vertexai~=0.0.5
+google-cloud-aiplatform
