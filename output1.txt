@@ -1,0 +1,16 @@
+```
+Test Scenarios:
+Happy Path Scenarios:
+Given I am on the search page When I enter "Dog" into the search field And I click search Then I should see a list of all dogs in the database, sorted by name, breed, and age.
+Given I am on the search page When I enter "Golden Retriever" into the search field And I click search Then I should see a list of all Golden Retrievers in the database, sorted by name, breed, and age.
+Given I am on the search page When I enter "Fido" into the search field And I click search Then I should see a list of all pets named Fido in the database, sorted by name, breed, and age.
+Negative Scenarios:
+Given I am on the search page When I enter "123" into the search field And I click search Then I should see a message that says "Invalid characters entered."
+Given I am on the search page When I enter "This is a really long search term that has more than 99 characters" into the search field And I click search Then I should see a message that says "Search term must be less than 99 characters."
+Given I am on the search page When I enter "a" into the search field And I click search Then I should see a message that says "Enter at least 3 characters."
+Edge Cases:
+Given I am on the search page When I enter "DOG" into the search field And I click search Then I should see a list of all dogs in the database, sorted by name, breed, and age.
+Given I am on the search page When I enter "golden retriever" into the search field And I click search Then I should see a list of all Golden Retrievers in the database, sorted by name, breed, and age.
+Given I am on the search page When I enter "fido" into the search field And I click search Then I should see a list of all pets named Fido in the database, sorted by name, breed, and age.
+Given I am on the search page When I enter "there are no pets matching your search criteria" into the search field And I click search Then I should see a message that says "No results found."
+```

@@ -1,0 +1,16 @@
+As a new customer
+I want to be able to search based on textual input
+So that I can see what pets they have that match my input
+
+Acceptance Criteria 
+-	User should be able to search on animal name
+-	User should be able to search on breed name
+-	User should be able to enter alphanumeric, apostrophe and hyphens only
+-	If the user enters invalid characters, they should see a message "valid characters only"
+-	User cannot enter more than 99 characters
+-	When user hits search, if <3 characters entered, see a message "enter at least 3 characters"
+-	Search is not case sensitive
+-	Search results show exact matches on animal name or breed name only
+-	Search results display alphabetically by animal name, then breed, then age
+-	Search results display animal name, breed and age of matching results.
+-	If no matches found, see message "no results found" 

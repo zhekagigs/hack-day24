@@ -1,0 +1,10 @@
+As a customer, 
+I want to be able to filter search results,
+So that I can easily find the specific pets I'm interested in.
+
+Acceptance criteria
+- User should be able to filter by pet category, age range, colour
+- User should be able to select more than one filters
+- User should be able to apply filters and see the filtered results
+- User should be able to reset applied filters and see the full result
+- If no matching pets are found based on the filter, display message "No results found for the selected filters"

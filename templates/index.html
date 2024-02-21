@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
+    />
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      project-id="hack-21feb"
+      agent-id="14e5ef4c-9da6-4311-b7cd-942f69ec655f"
+      language-code="en"
+      max-query-length="-1"
+    >
+      <df-messenger-chat-bubble chat-title="EnterpriseAgile">
+      </df-messenger-chat-bubble>
+    </df-messenger>
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>Home Page</title>
+    <style>
+      #output {
+        white-space: pre-line;
+      }
+      body {
+        display: flex;
+        /* justify-content: center;
+            align-items: center; */
+        padding: 100px;
+        height: 100vh;
+        margin: 0;
+        color: rgb(66, 57, 44);
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+      }
+      form {
+        width: 100%;
+      }
+      textarea {
+        width: 1200px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <form action="/submit" method="post">
+      <label for="text-input">Enter User Story:</label><br /><br />
+      <textarea id="text-input" name="text-input" rows="4" cols="50"></textarea
+      ><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <div id="output"></div>
+  </body>
+</html>

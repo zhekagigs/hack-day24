@@ -1,0 +1,30 @@
+candidates {
+  content {
+    role: "model"
+    parts {
+      text: "- Speaker 1, Kelly Sutton from Gaston: Expressed despair about extensive testing and losing hope early in their career.\n\n- Speaker 2: Described a challenging phase where they struggled to write effective tests and felt overwhelmed. They mentioned discovering testing and writing numerous tests, leading to a sense of despair. \n\n- Speaker 1: Suggested separating the testing of different aspects of the code, such as separating the calculation of weekly hours from the calculation of hourly rate, to simplify testing and improve confidence in the software\'s functionality.\n\n- Speaker 2: Emphasized the importance of isolating calculations and testing them separately. They explained that by doing so, they were able to avoid writing numerous tests and gain confidence in the software\'s accuracy."
+    }
+  }
+  finish_reason: STOP
+  safety_ratings {
+    category: HARM_CATEGORY_HARASSMENT
+    probability: NEGLIGIBLE
+  }
+  safety_ratings {
+    category: HARM_CATEGORY_HATE_SPEECH
+    probability: NEGLIGIBLE
+  }
+  safety_ratings {
+    category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+    probability: NEGLIGIBLE
+  }
+  safety_ratings {
+    category: HARM_CATEGORY_DANGEROUS_CONTENT
+    probability: NEGLIGIBLE
+  }
+}
+usage_metadata {
+  prompt_token_count: 684
+  candidates_token_count: 150
+  total_token_count: 834
+}
