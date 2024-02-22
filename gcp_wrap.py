@@ -1,6 +1,7 @@
 from consts import HTML_TEMPLATE
 from vertexai.preview.generative_models import GenerativeModel
 
+
 def try_gemi(prompt):
     gemini_pro_model = GenerativeModel("gemini-pro")
 

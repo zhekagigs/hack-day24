@@ -1,3 +1,5 @@
+import uuid
+
 import google.cloud.texttospeech as tts
 
 
@@ -28,8 +30,8 @@ def text_to_wav(voice_name: str, text: str):
         voice=voice_params,
         audio_config=audio_config,
     )
-
-    filename = f"{voice_name}.wav"
+    random_uuid = uuid.uuid4()
+    filename = f"{random_uuid}.wav"
     with open(filename, "wb") as out:
         out.write(response.audio_content)
         print(f'Generated speech saved to "{filename}"')
